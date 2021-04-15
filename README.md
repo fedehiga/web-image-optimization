@@ -8,6 +8,7 @@ Una imagen webp puede tener las siguientes características:
 - *Alpha*: soporta canal alpha para transparencias (como los PNG 24 bits)
 - *Animated*: soporta animación (como los .GIF)
 
+
 ### SOPORTE
 
 Soporte de browsers de webp lossless, lossy, alpha y animated:
@@ -30,6 +31,7 @@ Soporte de browsers de webp lossless, lossy, alpha y animated:
 
 [Fuente](https://caniuse.com/webp)
 
+
 ### IMPLEMENTACIÓN
 
 #### Via HTML
@@ -47,6 +49,7 @@ Fallback: si el browser no soporta webp ni srcset, el termina descargando la úl
 #### Via CSS
 
 Lo primero es detectar si el browser soporta webp. Si no lo soporta, la idea es servirle la imagen jpg o png original. La detección puede hacerse de varias maneras.
+
 
 ##### DETECCIÓN vía Modernizr JS
 
@@ -78,6 +81,7 @@ Opcionalmente por JS:
 });
 ```
 
+
 #### DETECCIÓN vía JS propio
 
 La idea es intentar decodificar una pequeñísima imagen webp, y chequear e éxito de ese intento:
@@ -107,6 +111,7 @@ function check_webp_feature(feature, callback) {
 
 Nota: la carga es non-blocking y asynchronous, cualquier código que dependa del soporte de webp debe ubicarse preferentemente en la callback function.
 
+
 ### CONVERSIÓN a formato .webp
 
 #### Via Photoshop plugin
@@ -115,6 +120,7 @@ Nota: la carga es non-blocking y asynchronous, cualquier código que dependa del
 #### Via cwebp command line tool
 
 [Google cwebp command line tool](https://developers.google.com/speed/webp/docs/using)
+
 [Download repository](https://storage.googleapis.com/downloads.webmproject.org/releases/webp/index.html)
 
 Ej:
