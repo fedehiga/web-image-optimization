@@ -115,7 +115,7 @@ Nota: la carga es non-blocking y asynchronous, cualquier código que dependa del
 ### CONVERSIÓN a formato .webp
 
 #### Via Photoshop plugin
-[Photoshop plugin](http://telegraphics.com.au/sw/product/WebPFormat#webpformat)
+[Photoshop plugin](https://developers.google.com/speed/webp/docs/webpshop)
 
 #### Via cwebp command line tool
 
